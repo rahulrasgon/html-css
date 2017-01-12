@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+p{
+  line-height: 30px;
+  font-size: 18px;
+  text-align:justify;
+}
+
+header {
+background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
+        background-size: 50%  cover;
+       height: 200px;
+        padding-left: 50px;
+      padding-top: 50px;
+      margin-bottom: 30px;
+}
+
+.viewdesign {
+  border: 1px solid black;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    margin-top: -78px;
+    margin-left: 1093px;
+}
+
+.viewarrow {
+  border: 1px solid black;
+    width: 50px;
+    text-align: center;
+    margin-top: -50px;
+    margin-left: 1293px;
+}
+
+header h1 {
+  font-size: 72px;
+  font-family: 'Abel', sans-serif;
+  margin-left: 80px;
+  margin-bottom: 3px;
+  color: #fff;
+
+}
+
+header h2 {
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 80px;
+font-weight: 100;
+  font-style: italic;
+  color: #fff;
+}
+* {
+  box-sizing: border-box;
+}
+section {
+  background: #fff;
+  width: 75%;
+float: left;
+padding-right: 5%;
+
+  padding-left: 10%;
+
+}
+
+h3 {
+  color:#A9A9A9;
+  margin:20px;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+  font-size:24px;
+  margin-left:0px;
+}
+
+.new-background {
+  background-color: #166119;
+    background-image:  url(http://www.csszengarden.com/214/bamboo.png);
+  width: 100%;
+  display: flex ! important;
+  flex-direction: column;
+  padding-right: 30%;
+  padding-left: 10%;
+  padding-bottom:20px;
+}
+
+.participation {
+  width: 100%;
+}
+
+.benefits {
+  width: 100%;
+}
+
+
+aside {
+  width: 25%;
+  float: right;
+  padding-left: 10px;
+  background: #e2e2e2;
+height: 248.2%;
+position: absolute;
+top:0px;
+right: 0px;
+opacity: 0.3;
+}
+aside ul {
+  list-style: none;
+}
+
+.design-selection ul  {
+  margin-top:200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+justify-content: center;
+}
+
+.design-selection ul  li{
+  margin-top: 32px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid grey;
+}
+
+.design-selection ul  li a {
+  color: grey;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+
+.designer-name  a {
+  text-transform: normal;
+}
+
+
+
+.design-selection ul  li a:nth-child(3n) {
+  color: black;
+}
+
+.zen-resources ul {
+margin-top:50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+justify-content: center;
+}
+
+.zen-resources ul  li {
+  width: 80%;
+  margin-top: 35px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid grey;
+  text-align: left;
+}
+
+
+.zen-resources ul  li a {
+  color: grey;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size: 18px;
+  margin-top:
+}
+.clear {
+  clear: both;
+}
+.lastbanner {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
+        background-size: 50% auto, auto, auto, cover;
+        height: 150px;
+        text-align: center;
+}
+.lastbanner p {
+  color: #756f6d;
+  font-size:24px;
+}
+
+.lastbanner p {
+  font-style:italic;
+line-height: 50px;
+}
+
+.lastbanner a {
+  color: #fff;
+  font-weight: 100px;
+font-style: normal;
+}
+footer {
+  background: #00443e;
+  height:100px;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+footer ul li {
+  margin-right: 50px;
+  margin-top: 20px;
+}
