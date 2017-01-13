@@ -24,7 +24,10 @@ p{
   font-size: 18px;
   text-align:justify;
 }
+body, html {
+  height: 100%;
 
+}
 header {
 background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
         background-size: 50%  cover;
@@ -71,6 +74,11 @@ font-weight: 100;
 * {
   box-sizing: border-box;
 }
+
+article {
+  background-color: #e2e2e2;;
+  height: 100%;
+}
 section {
   background: #fff;
   width: 75%;
@@ -111,14 +119,17 @@ h3 {
 
 
 aside {
+
   width: 25%;
   float: right;
   padding-left: 10px;
   background: #e2e2e2;
-height: 248.2%;
+height:200%;
 position: absolute;
+
 top:0px;
 right: 0px;
+
 opacity: 0.3;
 }
 aside ul {
@@ -181,11 +192,15 @@ justify-content: center;
   font-size: 18px;
   margin-top:
 }
+
+.requirements {
+  padding-bottom: 60px;
+}
 .clear {
   clear: both;
 }
 .lastbanner {
-  margin-top: 30px;
+
   display: flex;
   align-items: center;
   justify-content:center;
