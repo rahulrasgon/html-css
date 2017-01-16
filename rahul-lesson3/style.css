@@ -8,7 +8,7 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
+article, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
@@ -17,7 +17,11 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
+
+}
+
+* {
+  box-sizing: border-box;
 }
 p{
   line-height: 30px;
@@ -25,35 +29,44 @@ p{
   text-align:justify;
 }
 a {
-  color: #1d5d7b;
+  color:  #1d5d7b;
   font-weight: bold;
 }
 
 header {
-background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
-        background-size: 50%  cover;
+background-image: url(http://www.csszengarden.com/214/contours@2x.png),
+                                      url(http://www.csszengarden.com/214/noise.png),
+                                      url(http://www.csszengarden.com/214/gridlines.png),
+                                      url(http://www.csszengarden.com/214/huntington.jpg) ;
+        background-size: auto, auto, auto,  cover;
+        background-repeat: repeat, repeat, repeat, no-repeat;
        height: 200px;
         padding-left: 50px;
       padding-top: 50px;
       margin-bottom: 30px;
+      width: 100%;
 }
 
+.page-wrapper {
+  position: relative;
+}
 .viewdesign {
   border: 1px solid black;
-    width: 250px;
-    padding: 15px;
+    width: 80%;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: center;
 margin-top: 70px;
-margin-left: 50px;
+margin-left: 10% ;
 
 }
 
 .viewarrow {
   border: 1px solid black;
-    width: 50px;
+    width: 20%;
     text-align: center;
     margin-top: -50px;
-margin-left: 250px;
+margin-left: 70%;
 
 }
 
@@ -88,13 +101,13 @@ font-weight: 100;
   box-sizing: border-box;
 }
 
-article {
-  background-color: #e2e2e2;;
-  height: 100%;
-}
-
 i {
   margin-right: 5px;
+}
+
+.summary, .preamble, .explanation {
+  width: 70%;
+padding-left: 10%;
 }
 
 .summary a {
@@ -107,15 +120,6 @@ i {
   border-radius: 5px;
   color: #000;
 }
-section {
-  background: #fff;
-  width: 75%;
-float: left;
-padding-right: 5%;
-
-  padding-left: 10%;
-
-}
 
 h3 {
   color:#A9A9A9;
@@ -126,43 +130,61 @@ h3 {
   margin-left:0px;
 }
 
-.new-background {
-  background-color: rgba(22, 97, 25, 0.6);
+.participation, .benefits {
+
     background-image:  url(http://www.csszengarden.com/214/bamboo.png);
-    background-blend-mode: lighten;
-  width: 100%;
-  display: flex ! important;
-  flex-direction: column;
+    background-attachment: fixed;
+    background-color: rgba(22, 97, 25, 0.6);
+padding-top: 20px;
   padding-right: 30%;
   padding-left: 10%;
-  padding-bottom:20px;
+padding-bottom: 20px;
+
 }
 
-.participation {
+.benefits h3{
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+
+.supporting .requirements {
+
+  clear: both;
   width: 100%;
+
 }
 
-.benefits {
-  width: 100%;
+.requirements p {
+  float:left;
+  clear: both;
+  width: 70%;
+  padding-left: 10%;
+  margin-bottom: 20px;
+}
+
+.requirements h3 {
+  padding-left: 10%;
 }
 
 
-aside {
+.sidebar {
 
   width: 25%;
   float: right;
   padding-left: 10px;
   background: #e2e2e2;
-height:200%;
 position: absolute;
-
-top:0px;
+top: 0px;
 right: 0px;
+bottom: 250px;
+
 
 opacity: 0.3;
 }
-aside ul {
+.sidebar ul {
   list-style: none;
+  overflow: hidden;
 }
 
 .design-selection ul  {
@@ -198,7 +220,7 @@ font-weight: bolder;
 }
 
 .zen-resources ul {
-margin-top:50px;
+margin-top:90px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -223,12 +245,8 @@ justify-content: center;
   margin-top:
 }
 
-.requirements {
-  padding-bottom: 60px;
-}
-.clear {
-  clear: both;
-}
+
+
 .lastbanner {
 
   display: flex;
@@ -238,6 +256,9 @@ justify-content: center;
         background-size: 50% auto, auto, auto, cover;
         height: 150px;
         text-align: center;
+        width: 100%;
+
+
 }
 .lastbanner p {
   color: rgba(255, 255, 255, 0.4);
@@ -266,6 +287,8 @@ padding:13px;
   border:1px solid white;
 }
 
+
+
 .fa-ul i {
   color: white;
   text-align: center;
@@ -273,6 +296,8 @@ padding:13px;
 footer {
   background: #00443e;
   height:100px;
+  clear: both;
+  overflow: hidden;
 }
 
 footer ul {
@@ -285,3 +310,265 @@ footer ul li {
   margin-right: 50px;
   margin-top: 20px;
 }
+
+@media screen and (max-width: 320px) {
+
+p {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+
+  .supporting, section {
+    width: 100%;
+    float: left;
+
+  }
+
+  .sidebar {
+    width: 100%;
+    float: left;
+    position:initial;
+  }
+
+
+header {
+
+  height: 150px;
+  padding-left: 60px;
+  padding-top: 40px;
+
+}
+header h1 {
+  font-size: 32px;
+  margin-left: 28px;
+  margin-top: -60px;
+
+}
+
+header h2 {
+  font-size: 24px;
+  margin-left: 30px;
+}
+header img {
+  width: 60px;
+  height: 60px;
+margin-left: -40px;
+padding-left: 0px;
+}
+
+
+.lastbanner {
+        height: 200px;
+}
+.lastbanner p {
+  font-size:24px;
+line-height: 40px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+padding:10px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  border:1px solid white;
+}
+
+
+.fa-ul i {
+  color: white;
+  text-align: center;
+  font-size: 1.9em;
+  margin-left: -10px;
+}
+footer ul li {
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+.summary, .preamble, .explanation {
+  width: 100%;
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.participation, .benefits  {
+  width: 100%;
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.requirements p {
+width: 100%;
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.requirements h3 {
+  padding-left: 5%;
+}
+
+.zen-resources ul  li a {
+  font-size: 24px;
+}
+
+.design-selection ul  li a {
+  font-size: 24px;
+}
+
+.designer-name a {
+  font-size: 24px;
+}
+
+.viewdesign {
+  font-size: 24px;
+  text-align: center;
+}
+
+.viewdesign:hover {
+  background: black;
+  color: white;
+}
+.viewarrow {
+ display: none;
+}
+}
+
+@media screen and (min-width: 321px) and (max-width: 1024px) {
+p {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+
+  .supporting, section {
+    width: 100%;
+    float: left;
+
+  }
+
+  .sidebar {
+    width: 100%;
+    float: left;
+    position:initial;
+  }
+
+
+header {
+
+  height: 200px;
+  padding-left: 60px;
+  padding-top: 40px;
+
+}
+header h1 {
+  font-size: 48px;
+  margin-left: 70px;
+  margin-top: -100px;
+
+}
+
+header h2 {
+  font-size: 24px;
+  margin-left: 70px;
+}
+header img {
+  width: 100px;
+  height: 100px;
+margin-left: -40px;
+padding-left: 0px;
+}
+
+
+.lastbanner {
+        height: 200px;
+}
+.lastbanner p {
+  font-size:24px;
+line-height: 40px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+padding:10px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  border:1px solid white;
+}
+
+
+.fa-ul i {
+  color: white;
+  text-align: center;
+  font-size: 1.9em;
+  margin-left: -10px;
+}
+footer ul li {
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+.summary, .preamble, .explanation {
+  width: 100%;
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.participation, .benefits  {
+  width: 100%;
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.requirements p {
+width: 100%;
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.requirements h3 {
+  padding-left: 5%;
+}
+
+.zen-resources ul  li a {
+  font-size: 24px;
+}
+
+.design-selection ul  li a {
+  font-size: 24px;
+}
+
+.designer-name a {
+  font-size: 24px;
+}
+
+.viewdesign {
+  font-size: 24px;
+  text-align: center;
+}
+
+.viewdesign:hover {
+  background: black;
+  color: white;
+}
+.viewarrow {
+ display: none;
+}
+}
+
+
+
+
+
