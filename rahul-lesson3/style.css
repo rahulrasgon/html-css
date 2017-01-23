@@ -13,7 +13,8 @@ footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, a
 }
 
 /*Global CSS*/
-@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
 @font-face {
   font-family: 'icomoon';
   src: url('fonts/icomoon.eot');
@@ -172,7 +173,7 @@ header h2 {
 }
 
 .view-design {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
   border: 1px solid black;
   width: 80%;
   padding-top: 15px;
