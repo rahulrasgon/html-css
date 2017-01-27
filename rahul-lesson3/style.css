@@ -1,0 +1,532 @@
+/*Reset CSS*/
+@import url('https://fonts.googleapis.com/css?family=Abel');
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td, article, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+/*Global CSS*/
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot');
+  src: url('fonts/icomoon.woff2') format('woff2'),
+       url('fonts/icomoon.woff') format('woff'),
+       url('fonts/icomoon.ttf') format('truetype'),
+       url('fonts/icomoon.svg#icomoon') format('svg'),
+       url('fonts/icomoon.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* fonts Used
+font-family: 'Libre Baskerville', serif;
+font-family: 'Julius Sans One', sans-serif;
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 30px;
+  font-size: 18px;
+  text-align: justify;
+  font-family: 'Libre Baskerville', serif;
+}
+
+i {
+  margin-right: 10px;
+}
+a {
+  color: #1d5d7b;
+  font-weight: bold;
+}
+
+h3 {
+  color: #A9A9A9;
+  margin: 20px;
+  text-transform: uppercase;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight:normal;
+  font-size: 24px;
+  margin-left: 0px;
+}
+
+.page-wrapper {
+  position: relative;
+}
+
+.top-line {
+  width: 100%;
+  height: 8px;
+  background-color: #2d6360;
+}
+
+/*Header CSS*/
+header {
+  background-image: url(http://www.csszengarden.com/214/contours@2x.png),
+                    url(http://www.csszengarden.com/214/noise.png),
+                    url(http://www.csszengarden.com/214/gridlines.png),
+                    url(http://www.csszengarden.com/214/huntington.jpg);
+  background-size: auto, auto, auto, cover;
+  background-repeat: repeat, repeat, repeat, no-repeat;
+  height: 200px;
+  padding-left: 50px;
+  padding-top: 50px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 3.2em;
+  font-weight:normal;
+  font-family: 'Julius Sans One', sans-serif;
+  margin-left: 160px;
+  margin-bottom: 3px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: -100px;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+  margin-left: 50px;
+}
+
+header h2 {
+  font-size: 24px;
+  font-family: 'Libre Baskerville', serif;
+  margin-left: 80px;
+  font-weight:bold;
+  font-style: italic;
+  color: rgba(255,255,255,0.6);
+  margin-left: 160px;
+}
+
+/*Content CSS*/
+.summary, .preamble, .explanation {
+  width: 70%;
+  padding-left: 10%;
+}
+
+.summary a {
+  padding: 10px;
+  color: #000;
+}
+
+.summary a:hover {
+  background: RED;
+  border-radius: 5px;
+  color: #000;
+}
+
+.participation, .benefits {
+  background-image: url(http://www.csszengarden.com/214/bamboo.png);
+  background-attachment: fixed;
+  background-color: rgba(22, 97, 25, 0.6);
+  padding-top: 20px;
+  padding-right: 30%;
+  padding-left: 10%;
+  padding-bottom: 20px;
+}
+
+.benefits h3 {
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+.supporting .requirements {
+  clear: both;
+  width: 100%;
+}
+
+.requirements p {
+  float: left;
+  clear: both;
+  width: 70%;
+  padding-left: 10%;
+  margin-bottom: 20px;
+}
+
+.requirements h3 {
+  padding-left: 10%;
+}
+
+/*Sidebar CSS*/
+.sidebar {
+  width: 25%;
+  float: right;
+  padding-left: 10px;
+  background: rgba(225, 225, 225, 0.4);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 250px;
+}
+
+.sidebar ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+.view-design {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid black;
+  width: 80%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  margin-top: 70px;
+  margin-left: 10%;
+  color: #fff;
+
+}
+
+.view-arrow {
+  border: 1px solid black;
+  width: 20%;
+  height: 50px;
+  text-align: center;
+  margin-top: -50px;
+  margin-left: 70%;
+}
+
+.view-arrow img {
+  width: 100%;
+  height: 50px;
+  padding: 2px 11px;
+}
+
+.design-selection ul {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+
+.design-selection ul li {
+  margin-top: 32px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid grey;
+}
+
+.design-selection ul li:last-of-type {
+  border: none;
+}
+
+.design-selection ul li a {
+  color: grey;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.designer-name a {
+  text-transform: normal;
+}
+
+.design-selection ul li a:nth-child(3n) {
+  color: black;
+  text-transform:capitalize;
+}
+
+.zen-resources ul {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.zen-resources ul li {
+  width: 80%;
+  margin-top: 35px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid grey;
+  text-align: left;
+}
+
+.zen-resources ul li:first-child {
+  padding-top: 35px;
+  border-top:1px solid grey;
+}
+.zen-resources ul li a {
+  color: grey;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top:
+}
+
+/*Footer Top Banner CSS*/
+.last-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(http://www.csszengarden.com/214/contours@2x.png),
+                    url(http://www.csszengarden.com/214/noise.png),
+                    url(http://www.csszengarden.com/214/gridlines.png),
+                    url(http://www.csszengarden.com/214/huntington.jpg);
+  background-size: 50% auto, auto, auto, cover;
+  height: 150px;
+  text-align: center;
+  width: 100%;
+}
+
+.last-banner p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 24px;
+  text-align: center;
+}
+
+.last-banner p {
+  font-style: italic;
+  line-height: 50px;
+}
+
+.last-banner a {
+  color: #fff;
+  font-weight: 100px;
+  font-style: normal;
+  text-decoration: none;
+}
+
+/*Footer CSS*/
+.footer-icons {
+  color: white;
+  text-align: center;
+}
+
+footer {
+  background: #00443e;
+  height: 100px;
+  clear: both;
+  overflow: hidden;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer ul li {
+  margin-right: 50px;
+  margin-top: 20px;
+  font-family: 'icomoon';
+  font-size:48px;
+  list-style: none;
+}
+
+
+/*Low Resolution CSS*/
+@media screen and (max-width: 320px) {
+  p {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  .supporting, section {
+    width: 100%;
+    float: left;
+  }
+  .sidebar {
+    width: 100%;
+    float: left;
+    position: initial;
+  }
+  header {
+    height: 180px;
+    padding-left: 60px;
+    padding-top: 40px;
+  }
+  header h1 {
+    font-size: 32px;
+    margin-left: 28px;
+    margin-top: -60px;
+  }
+  header h2 {
+    font-size: 24px;
+    margin-left: 30px;
+  }
+  header img {
+    width: 60px;
+    height: 60px;
+    margin-left: -40px;
+    padding-left: 0px;
+  }
+  .last-banner {
+    height: 200px;
+  }
+  .last-banner p {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .footer-icons {
+    color: white;
+    text-align: center;
+    font-size: 1.9em;
+  }
+  footer ul li {
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-top: 20px;
+    list-style: none;
+    margin-right: 0px;
+  }
+  .summary, .preamble, .explanation {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .participation, .benefits {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .requirements p {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .requirements h3 {
+    padding-left: 5%;
+  }
+  .zen-resources ul li a {
+    font-size: 24px;
+  }
+  .design-selection ul li a {
+    font-size: 24px;
+  }
+  .designer-name a {
+    font-size: 24px;
+  }
+  .view-design {
+    font-size: 24px;
+    text-align: center;
+  }
+  .view-design:hover {
+    background: white;
+    color: black;
+  }
+  .view-arrow {
+    display: none;
+  }
+}
+
+/*Mid Resolution CSS*/
+@media screen and (min-width: 321px) and (max-width: 1024px) {
+  p {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  .supporting, section {
+    width: 100%;
+    float: left;
+  }
+  .sidebar {
+    width: 100%;
+    float: left;
+    position: initial;
+  }
+  header {
+    height: 210px;
+    padding-left: 60px;
+    padding-top: 40px;
+  }
+  header h1 {
+    font-size: 48px;
+    margin-left: 70px;
+    margin-top: -100px;
+  }
+  header h2 {
+    font-size: 24px;
+    margin-left: 70px;
+  }
+  header img {
+    width: 100px;
+    height: 100px;
+    margin-left: -40px;
+    padding-left: 0px;
+  }
+  .last-banner {
+    height: 200px;
+  }
+  .last-banner p {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .footer-icons {
+    color: white;
+    text-align: center;
+    font-size: 1.9em;
+  }
+  footer ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 0px;
+    margin-top: 20px;
+    list-style: none;
+  }
+  .summary, .preamble, .explanation {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .participation, .benefits {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .requirements p {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .requirements h3 {
+    padding-left: 5%;
+  }
+  .zen-resources ul li {
+    text-align: center;
+  }
+  .zen-resources ul li a {
+    font-size: 24px;
+  }
+  .design-selection ul li a {
+    font-size: 24px;
+  }
+  .designer-name a {
+    font-size: 24px;
+  }
+  .view-design {
+    font-size: 24px;
+    text-align: center;
+    color: black;
+  }
+  .view-design:hover {
+    background: white;
+    color: black;
+  }
+  .view-arrow {
+    display: none;
+  }
+}
