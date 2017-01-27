@@ -1,0 +1,27 @@
+{
+  "name": "rahul-lesson3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "browser-sync": "^2.18.6",
+    "compass": "^0.1.1",
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jshint": "^2.0.4",
+    "imagemin": "^5.2.2",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1",
+    "node-sass": "^4.3.0",
+    "node-sass-globbing": "0.0.23",
+    "normalize-compass": "^3.0.1",
+    "susy": "^2.2.12"
+  }
+}
